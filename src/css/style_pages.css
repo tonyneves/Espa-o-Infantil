@@ -1,0 +1,94 @@
+/* page alphabet */
+.alph .center {
+    background-color: #ddd;
+    box-shadow: 5px 4px 8px 0px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 20px;
+    border: solid 1px #999;
+    text-align: center;
+    margin-top: 6px;
+    padding: 10px;
+}
+
+.center .title_play p, h6{
+    font-weight: bold;
+    font-family: monospace;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 10px 0;
+}
+
+.alph .title_play h6 {
+    background-color: rgba(131, 174, 223, 0.794);
+    color: rgb(0, 60, 172);
+    font-size: 25px;
+    border-radius: 15px;
+}
+
+.alph .imagem_js img{
+    width: 300px;
+    height: 300px;
+}
+
+.alph .audio_js {
+    margin: 20px;
+}
+/* ---------------------------- */
+
+.back_img{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+@media screen and (max-width: 600px){
+    .alph .imagem_js img{
+        width: 200px;
+        height: 200px;
+    }
+    .center .title_play p, h6{
+        font-weight: bold;
+        font-family: monospace;
+        color: #07f;
+        font-size: 18px;
+        text-transform: uppercase;
+        padding: 10px 0;
+    }
+    .center .title_play h6{
+        background-color: #a5a9af;
+        border-radius: 15px;
+    }
+}
+@media screen and (max-width: 440px){
+    .alph .imagem_js img{
+        width: 180px;
+        height: 180px;
+    }
+
+    p.back_home{
+        font-size: 20px;
+    }
+    div.audio_js audio{
+        width: 90%;
+    }
+    .footer p{
+        text-align: center;
+        padding-top: 5px;
+    }
+}
+/* ---------------------------- */
+
+.title_play input{
+    width: 100%;
+    font-weight: bold;
+    text-align: center;
+    font-family: monospace;
+    text-transform: uppercase;
+    padding: 10px 0;
+    background-color: #172a46;
+    color: rgb(0, 60, 172);
+    font-size: 25px;
+    border-radius: 15px;
+    border-radius: 15px;
+}

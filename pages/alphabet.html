@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brincando com Alfabeto</title>
+    <script src="../src/js/page_aph_js.js"></script>
+    <link rel="stylesheet" href="../src/css/style.css">
+    <link rel="stylesheet" href="../src/css/style_pages.css">
+    <script>
+        function keydownAoDigitar() {
+                var tecla = event.key;
+                if (tecla == "a")
+                    document.getElementById("inser_elem").innerHTML = '<div class="imagem_js"><img src = "../images/alphabet/A.png" alt = ""></div><div class="audio_js"><audio autoplay="autoplay" controls="controls"><source src="../audio/alphabet/A.mp3" type="audio/mp3" /></audio></div>'
+                if (tecla == "b")
+                    document.getElementById("inser_elem").innerHTML = '<div class="imagem_js"><img src = "../images/alphabet/B.png" alt = ""></div><div class="audio_js"><audio autoplay="autoplay" controls="controls"><source src="../audio/alphabet/B.mp3" type="audio/mp3" /></audio></div>'
+
+                if (tecla == "c")
+                    document.getElementById("inser_elem").innerHTML = '<div class="imagem_js"><img src = "../images/alphabet/C.png" alt = ""></div><div class="audio_js"><audio autoplay="autoplay" controls="controls"><source src="../audio/audo.mp3" type="audio/mp3" /></audio></div>'
+                if (tecla == "d")
+                    document.getElementById("inser_elem").innerHTML = '<div class="imagem_js"><img src = "../images/alphabet/D.png" alt = ""></div><div class="audio_js"><audio autoplay="autoplay" controls="controls"><source src="../audio/audo.mp3" type="audio/mp3" /></audio></div>'
+            };
+
+            function keyupAoSoltar() {
+                document.getElementById("remove").value = '';
+            };
+    </script>
+</head>
+<body>
+
+    <header>
+        <div class="header">
+            <div class="back_img" style="background-image: url('../images/back_h.jpg');">
+                <img src="..//src/assets/ico/icon.ico" alt="">
+                <h1>Espaço Infantil</h1>
+            </div>
+        </div>
+    </header>
+
+    <section class="alph ">
+        <div class="center " style="background-image: url('../images/back_a.png');">
+            <div class="title_play">
+                <p style="color: black; background-color: rgba(131, 174, 223, 0.794);">Bem vindo! - nesse espaço voce pode
+                    se divertir com o alfabeto </p>
+                <input type="text" Onkeypress="keydownAoDigitar()" onkeyup="keyupAoSoltar()" id="remove" class="inser"
+                    placeholder="Digite uma letra aqui...">
+            </div>
+            <div id="inser_elem">
+    
+            </div>
+        </div>
+        <div class="back_home_div">
+            <p class="back_home"><span>Clique para voltar a </span><a href="../index.html">página inicial</a></p>
+        </div>
+    </section>
+
+        <footer>
+            <div class="footer">
+                <p>© Todos os direitos resevados</p>
+            </div>
+        </footer>
+</body>
+</html>
